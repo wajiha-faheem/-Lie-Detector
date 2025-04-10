@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffe6f7, #e0f7fa);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    width: 90%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 2px solid #ffb6c1;
+    outline: none;
+    margin-bottom: 20px;
+  }
+  
+  #scanBtn {
+    padding: 12px 20px;
+    font-size: 18px;
+    background: linear-gradient(45deg, #ff6ec4, #7873f5);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    box-shadow: 0 5px 15px rgba(255, 110, 196, 0.4);
+  }
+  
+  #scanBtn:hover {
+    transform: scale(1.05);
+  }
+  
+  .scanner {
+    width: 100%;
+    height: 6px;
+    margin: 25px auto;
+    background: linear-gradient(90deg, #ff6ec4, #7873f5);
+    animation: scan 2s linear infinite;
+    border-radius: 10px;
+  }
+  
+  @keyframes scan {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 100%;
+    }
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #resultBox {
+    margin-top: 25px;
+  }
+  
+  #resultText {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  #resultEmoji {
+    font-size: 40px;
+    margin-top: 10px;
+  }
+  
